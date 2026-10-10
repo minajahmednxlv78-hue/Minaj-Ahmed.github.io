@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minhaj Ahmed | CSE Student & Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Minhaj Ahmed, Computer Science Engineering student at Dhemaji Engineering College (ASTU), Assam." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <a href="#home" class="logo">&lt;minhaj<span>/</span>&gt;</a>
+    <nav>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow mono">Hello, world! I'm</p>
+        <h1>Minhaj Ahmed</h1>
+        <h2 class="mono"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead">
+          Computer Science Engineering student passionate about programming,
+          problem-solving and emerging technologies. Currently building strong
+          foundations in Data Structures &amp; Algorithms and CS fundamentals.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/minhajahmed-7282b8321" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:minajahmednxlv78@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-hidden="true">
+        <div class="card-bar"><i></i><i></i><i></i><span class="mono">minhaj.py</span></div>
+<pre class="mono code"><span class="k">class</span> <span class="f">Developer</span>:
+    <span class="k">def</span> <span class="f">__init__</span>(self):
+        self.name   = <span class="s">"Minhaj Ahmed"</span>
+        self.degree = <span class="s">"B.Tech CSE"</span>
+        self.uni    = <span class="s">"ASTU, Assam"</span>
+        self.skills = [<span class="s">"DSA"</span>, <span class="s">"OOP"</span>,
+                       <span class="s">"Python"</span>, <span class="s">"C/C++"</span>]
+        self.status = <span class="s">"Learning &amp; building"</span>
+
+me = Developer()</pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section reveal">
+      <h3 class="section-title"><span class="mono">01.</span> About Me</h3>
+      <div class="about-grid">
+        <p>
+          I'm a Computer Science Engineering student at
+          <strong>Dhemaji Engineering College</strong>, affiliated with
+          <strong>Assam Science and Technology University (ASTU)</strong>.
+          I enjoy turning problems into logic and logic into code.
+        </p>
+        <p>
+          Right now I'm strengthening my <strong>DSA</strong> and
+          <strong>computer science fundamentals</strong> while exploring
+          different areas of technology. I'm eager to learn, grow and work on
+          projects that help me become a skilled software developer.
+        </p>
+        <ul class="facts">
+          <li><span class="mono">📍</span> Golaghat, Assam, India</li>
+          <li><span class="mono">🎓</span> B.Tech, Computer Science</li>
+          <li><span class="mono">🎯</span> Aspiring Software Developer</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section reveal">
+      <h3 class="section-title"><span class="mono">02.</span> Skills</h3>
+      <div class="skills">
+        <div class="skill"><div class="skill-head"><span>DSA in C / C++</span><span class="mono">Learning</span></div><div class="bar"><div data-level="65"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>Object-Oriented Programming</span><span class="mono">Core</span></div><div class="bar"><div data-level="70"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>Python</span><span class="mono">Core</span></div><div class="bar"><div data-level="70"></div></div></div>
+        <div class="skill"><div class="skill-head"><span>Problem Solving</span><span class="mono">Daily practice</span></div><div class="bar"><div data-level="60"></div></div></div>
+      </div>
+      <div class="chips">
+        <span>C</span><span>C++</span><span>Python</span><span>OOP</span>
+        <span>Data Structures</span><span>Algorithms</span><span>Git</span><span>GitHub</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS (repos rendered from GitHub API; fallback cards if it fails) -->
+    <section id="projects" class="section reveal">
+      <h3 class="section-title"><span class="mono">03.</span> Projects &amp; Repositories</h3>
+      <p class="muted">Pulled live from my GitHub. Pinned by most recently updated.</p>
+      <div id="repo-grid" class="repo-grid">
+        <!-- Fallback / placeholder cards (replaced automatically when GitHub API loads) -->
+        <article class="repo">
+          <h4>📁 your-first-project</h4>
+          <p>Add a short description of what this project does and what you learned.</p>
+          <div class="repo-meta mono"><span>● Python</span><span>⭐ 0</span></div>
+        </article>
+        <article class="repo">
+          <h4>📁 dsa-in-cpp</h4>
+          <p>Solutions and notes from my Data Structures &amp; Algorithms practice.</p>
+          <div class="repo-meta mono"><span>● C++</span><span>⭐ 0</span></div>
+        </article>
+        <article class="repo">
+          <h4>📁 python-mini-projects</h4>
+          <p>Small Python programs exploring OOP and problem solving.</p>
+          <div class="repo-meta mono"><span>● Python</span><span>⭐ 0</span></div>
+        </article>
+      </div>
+      <a class="btn" id="all-repos" href="https://github.com/YOUR_GITHUB_USERNAME?tab=repositories" target="_blank" rel="noopener">See all repositories →</a>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section reveal">
+      <h3 class="section-title"><span class="mono">04.</span> Education</h3>
+      <div class="timeline">
+        <div class="tl-item">
+          <span class="mono date">Aug 2025 – Present</span>
+          <h4>B.Tech, Computer Science</h4>
+          <p>Dhemaji Engineering College (DEC) · Assam Science and Technology University (ASTU)</p>
+        </div>
+        <div class="tl-item">
+          <span class="mono date">Mar 2022 – Mar 2024</span>
+          <h4>Higher Secondary</h4>
+          <p>Delhi Public School</p>
+        </div>
+        <div class="tl-item">
+          <span class="mono date">Jan 2018 – Jan 2022</span>
+          <h4>Secondary School</h4>
+          <p>Morangi D.N High School</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section reveal contact">
+      <h3 class="section-title"><span class="mono">05.</span> Get In Touch</h3>
+      <p class="lead center">
+        I'm open to internships, learning opportunities and collaborations.
+        My inbox is always open.
+      </p>
+      <div class="cta center">
+        <a class="btn primary" href="mailto:minajahmednxlv78@gmail.com">Say Hello</a>
+        <a class="btn" href="https://www.linkedin.com/in/minhajahmed-7282b8321" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="mono">Designed &amp; built by Minhaj Ahmed · © <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
